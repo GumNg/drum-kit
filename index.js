@@ -6,6 +6,10 @@ for (let i = 0; i < numOfDrumBtn; i++) {
 
 // query selects all .drum classes incriments with i through each loop and calls anonymous function
     document.querySelectorAll(".drum")[i].addEventListener("click", function() {
+        
+        // creates a variable to hold this and the html content inside
+        let btnInnerHtml = this.innerHTML;
+
 
         // adds new variable for new audio object and selects file
         let tom1 = new Audio(`sounds/tom-1.mp3`);
