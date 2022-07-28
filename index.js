@@ -9,14 +9,54 @@ for (let i = 0; i < numOfDrumBtn; i++) {
     let btnInnerHtml = this.innerHTML;
 
     switch (btnInnerHtml) {
+      // executes code if innerHTML contains w
       case "w":
         // adds new variable for new audio object and selects file
         let tom1 = new Audio(`sounds/tom-1.mp3`);
+
         // calls the new object to play sound
         tom1.play();
+
+        // end of this case block
         break;
-        default:
-            
+
+      // executes code if innerHTML contains a
+      case "a":
+        let crash = new Audio(`sounds/crash.mp3`);
+        crash.play();
+        break;
+
+      // executes code if innerHTML contains s
+      case "s":
+        let snare = new Audio(`sounds/snare.mp3`);
+        snare.play();
+        break;
+
+      // executes code if innerHTML contains d
+      case "d":
+        let kick = new Audio(`sounds/kick-bass.mp3`);
+        kick.play();
+        break;
+
+      // executes code if innerHTML contains j
+      case "j":
+        let tom2 = new Audio(`sounds/tom-2.mp3`);
+        tom2.play();
+        break;
+
+      // executes code if innerHTML contains k
+      case "k":
+        let tom3 = new Audio(`sounds/tom-3.mp3`);
+        tom3.play();
+        break;
+
+      // executes code if innerHTML contains l
+      case "l":
+        let tom4 = new Audio(`sounds/tom-4.mp3`);
+        tom4.play();
+        break;
+
+      default:
     }
   });
 }
