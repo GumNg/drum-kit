@@ -1,7 +1,11 @@
+/* body section */
+
 body {
   text-align: center;
   background-color: #283149;
 }
+
+/* header section */
 
 h1 {
   font-size: 5rem;
@@ -11,10 +15,14 @@ h1 {
 
 }
 
+/* footer section */
+
 footer {
   color: #DBEDF3;
   font-family: sans-serif;
 }
+
+/* drum buttons */
 
 .w {
 
@@ -43,6 +51,8 @@ footer {
 .l {
 
 }
+
+/* drum buttons container */
 
 .set {
   margin: 10% auto;
