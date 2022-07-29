@@ -9,19 +9,20 @@ for (let i = 0; i < numOfDrumBtn; i++) {
     let btnInnerHtml = this.innerHTML;
 
     // calls function using innerHTML of button clicked
-    makeSound(btnInnerHtml)
+    makeSound(btnInnerHtml);
   });
 }
 
 // adds event listner to entire page to check for when a key is pressed
-document.addEventListener("keydown", function(event) {
-    // calls function using key property of the event 
-    makeSound(event.key);
+document.addEventListener("keydown", function (event) {
+  // calls function using key property of the event
+  makeSound(event.key);
 });
 
+// function to play sound if switch statements are met
 function makeSound(key) {
   switch (key) {
-    // executes code if innerHTML contains w
+    // executes code if innerHTML contains or key pressed is w
     case "w":
       // adds new variable for new audio object and selects file
       let tom1 = new Audio(`sounds/tom-1.mp3`);
@@ -32,37 +33,37 @@ function makeSound(key) {
       // end of this case block
       break;
 
-    // executes code if innerHTML contains a
+    // executes code if innerHTML contains or key pressed is a
     case "a":
       let crash = new Audio(`sounds/crash.mp3`);
       crash.play();
       break;
 
-    // executes code if innerHTML contains s
+    // executes code if innerHTML contains or key pressed is s
     case "s":
       let snare = new Audio(`sounds/snare.mp3`);
       snare.play();
       break;
 
-    // executes code if innerHTML contains d
+    // executes code if innerHTML contains or key pressed is d
     case "d":
       let kick = new Audio(`sounds/kick-bass.mp3`);
       kick.play();
       break;
 
-    // executes code if innerHTML contains j
+    // executes code if innerHTML contains or key pressed is j
     case "j":
       let tom2 = new Audio(`sounds/tom-2.mp3`);
       tom2.play();
       break;
 
-    // executes code if innerHTML contains k
+    // executes code if innerHTML contains or key pressed is k
     case "k":
       let tom3 = new Audio(`sounds/tom-3.mp3`);
       tom3.play();
       break;
 
-    // executes code if innerHTML contains l
+    // executes code if innerHTML contains or key pressed is l
     case "l":
       let tom4 = new Audio(`sounds/tom-4.mp3`);
       tom4.play();
