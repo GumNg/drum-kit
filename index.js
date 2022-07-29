@@ -72,3 +72,11 @@ function makeSound(key) {
     default:
   }
 }
+
+// function for animation to pressed buttons
+function btnAnimation (currentKey) {
+    // selects based on current pressed or clicked button
+    let activeBtn = document.querySelector("." + currentKey);
+    // adds pressed class
+    activeBtn.classList.add("pressed");
+}
