@@ -7,11 +7,13 @@ for (let i = 0; i < numOfDrumBtn; i++) {
   document.querySelectorAll(".drum")[i].addEventListener("click", function () {
     // creates a variable to hold this and the html content inside
     let btnInnerHtml = this.innerHTML;
+
+    makeSound(btnInnerHtml)
   });
 }
 
-function makeSound() {
-  switch (btnInnerHtml) {
+function makeSound(key) {
+  switch (key) {
     // executes code if innerHTML contains w
     case "w":
       // adds new variable for new audio object and selects file
