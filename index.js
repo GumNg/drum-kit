@@ -83,4 +83,8 @@ function btnAnimation (currentKey) {
     let activeBtn = document.querySelector("." + currentKey);
     // adds pressed class
     activeBtn.classList.add("pressed");
+    // removes pressed class after 100 miliseconds
+    setTimeout(function() {
+        activeBtn.classList.remove("pressed");
+    }, 100);
 }
