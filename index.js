@@ -3,14 +3,21 @@ let numOfDrumBtn = document.querySelectorAll(".drum").length;
 
 // sets for loop to run and incriment if i is less than the length of variable
 for (let i = 0; i < numOfDrumBtn; i++) {
-  // query selects all .drum classes incriments with i through each loop and calls anonymous function
+  // query selects all .drum classes incriments with i through each loop and calls anonymous function when clicked
   document.querySelectorAll(".drum")[i].addEventListener("click", function () {
     // creates a variable to hold this and the html content inside
     let btnInnerHtml = this.innerHTML;
 
+    // calls function using innerHTML of button clicked
     makeSound(btnInnerHtml)
   });
 }
+
+// adds event listner to entire page to check for when a key is pressed
+document.addEventListener("keydown", function(event) {
+    // calls function using key property of the event 
+    makeSound(event.key);
+});
 
 function makeSound(key) {
   switch (key) {
