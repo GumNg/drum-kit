@@ -10,6 +10,8 @@ for (let i = 0; i < numOfDrumBtn; i++) {
 
     // calls function using innerHTML of button clicked
     makeSound(btnInnerHtml);
+    // calls function to animate button when clicked 
+    btnAnimation(btnInnerHtml);
   });
 }
 
@@ -17,6 +19,8 @@ for (let i = 0; i < numOfDrumBtn; i++) {
 document.addEventListener("keydown", function (event) {
   // calls function using key property of the event
   makeSound(event.key);
+  // calls function to animate button when key is pressed
+  btnAnimation(event.key)
 });
 
 // function to play sound if switch statements are met
